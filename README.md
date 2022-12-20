@@ -34,4 +34,47 @@ How I coded my unique linear regression to compare the  algorithm above:
 - For checking the outliers i used the boxplot then use the Z-score technique to remove them and almost remove about 2500 rows 
 - <img src = "https://user-images.githubusercontent.com/85246622/208271924-47545468-8913-4c14-96c9-fef7c6d4c757.png" width = "800" height = "600" />
 - <img src = "https://user-images.githubusercontent.com/85246622/208271928-799b33b7-4e71-4a6c-94d7-54b0c059ed81.png" width = "800" height = "600" />
+---------------------------------------------
+- To fit the data to  sklearn's multilinear regression, I split the data into training and test sets and apply data normalization by StandardScaler, then  fit the data to the model and predict the test set and print the R2_score and the statistical models for  Sklearn's multilinear regression model
+- <img src = "https://user-images.githubusercontent.com/85246622/208651224-55f246ae-13b5-4ef0-aa3e-d39300dd9675.png" width ="400" height = "400" />
+---------------------------------------------
+- How I coded my unique multilinear regression to compare the  algorithm above:
+- I coded a function that includes all the steps to build the model from scratch, split the data and apply data normalization, to then  calculate the gradient descent, I first predicted the predicted values and then the error calculated to calculate the cost function and  gradient descent and then finally updating the two continuous thetas  to the best values so they reach the minimum to break this loop condition with their latest values for later use like using the cost function list to plot the cost functions versus number of iterations 
+- <img src = "https://user-images.githubusercontent.com/85246622/208652938-7148d3e2-d68f-4ded-8a37-fbfa459b875f.png" width ="400" height = "400" />
+<h2>------------------------------------------------------------------------------</h2>
+<h3> Polynomial Regression implementation : </h3> 
+
+- For the data selection phase, I select data for linear polynomial regression and other data for multipolynomial regression, and a set of fixed Y-labels
+- In linear polynomial  regression, I select the third degree for polynomial  features, then transform  data to split into training and test sets and apply data normalization by StandardScaler, then use a linear regression model to fit the data and predict the test set and print the R2_score
+- <img src = "https://user-images.githubusercontent.com/85246622/208655184-b94c3c20-e07f-4a31-a175-049ae4d4b24f.png" width ="400" height = "400" />
+---------------------------------------------
+- In multipolynomial regression, I select the second degree for polynomial  features, then transform  data to split into training and test sets and apply data normalization by StandardScaler, then use a multiregression model to fit the data and predict the test set and print the R2_score
+- <img src = "https://user-images.githubusercontent.com/85246622/208655504-99bb7a17-a274-4afd-84fe-11b5a5c77d0e.png" width ="400" height = "400" />
+---------------------------------------------
+- In my polynomial regression, I just implemented the linear model, So i first coded a function named create_features and return the data to its second degree for polynomial features  
+- <img src = "https://user-images.githubusercontent.com/85246622/208655937-6fdbf0b1-4f28-4680-b160-219b2aa1de5c.png" width ="400" height = "400" />
+- Then the normal_equ function to use the new data from the above function after i splited it to training and test sets and i applied the formula  <h1> (((X.T) X ) ** -1 ) X.T Y </h1> then predict the test set and print the R2_score 
+- <img src = "https://user-images.githubusercontent.com/85246622/208656525-8830724f-3f2f-485c-9606-f837dc787d00.png" width ="400" height = "400" />
+<h2>------------------------------------------------------------------------------</h2>
+<h3> SVR Regression implementation : </h3> 
+
+- For the three different kernels of the SVR model, I first split the data into training and test sets and apply data normalization by StandardScaler, then I initialize the three kernels with different names 
+- <img src = "https://user-images.githubusercontent.com/85246622/208657562-13949f5b-6510-4fe0-86ec-f658098ebb5d.png" width ="400" height = "400" />
+---------------------------------------------
+- The SVR linear kernel and its R2_score
+- <img src = "https://user-images.githubusercontent.com/85246622/208657751-8dd24b40-3301-47b7-a6be-5f8b91bf546b.png" width ="400" height = "400" />
+---------------------------------------------
+- The SVR rbf kernel and its R2_score
+- <img src = "https://user-images.githubusercontent.com/85246622/208657775-e96fa438-eee0-4b19-9471-74f9ed23062d.png" width ="400" height = "400" />
+---------------------------------------------
+- The SVR poly kernel and its R2_score
+- <img src = "https://user-images.githubusercontent.com/85246622/208657797-575b7341-566d-4d85-93fc-b430bf41cb48.png" width ="400" height = "400" />
+<h1>----------------------------------------------------------------</h1>
+<h2> Machine Learning Classification Algorithms </h2>
+<h3> Logistic Regression implementation : </h3> 
+
+- 
+
+
+
 
