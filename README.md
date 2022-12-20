@@ -14,7 +14,7 @@ For a single data set I will use 8 different machine learning algorithms and com
 - <img src = "https://user-images.githubusercontent.com/85246622/208268296-77bd1286-4266-421b-a46d-905ae76eff91.png" width = "400" height = "400" />
 ---------------------------------------------
 - For the three categorical columns, I used Sklearn's LabelEncoder  to convert them to numeric values for easy handling in future models
-<h1>------------------------------------------------------------------------------</h1>
+<h1>----------------------------------------------------------------</h1>
 <h2> Machine Learning Regression Algorithms </h2>
 <h3> Single Linear Regression implementation : </h3> 
 
