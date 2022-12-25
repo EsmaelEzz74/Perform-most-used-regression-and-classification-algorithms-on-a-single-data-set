@@ -56,7 +56,7 @@ How I coded my unique linear regression to compare the  algorithm above:
 - Then the normal_equ function to use the new data from the above function after i splited it to training and test sets and i applied the formula  <h1> (((X.T) X ) ** -1 ) X.T Y </h1> then predict the test set and print the R2_score 
 - <img src = "https://user-images.githubusercontent.com/85246622/208656525-8830724f-3f2f-485c-9606-f837dc787d00.png" width ="400" height = "400" />
 <h2>------------------------------------------------------------------------------</h2>
-<h3> SVR Regression implementation : </h3> 
+<h3> SVM Regression implementation : </h3> 
 
 - For the three different kernels of the SVR model, I first split the data into training and test sets and apply data normalization by StandardScaler, then I initialize the three kernels with different names 
 - <img src = "https://user-images.githubusercontent.com/85246622/208657562-13949f5b-6510-4fe0-86ec-f658098ebb5d.png" width ="400" height = "400" />
@@ -73,7 +73,22 @@ How I coded my unique linear regression to compare the  algorithm above:
 <h2> Machine Learning Classification Algorithms </h2>
 <h3> Logistic Regression implementation : </h3> 
 
-- 
+- In the classification problem, the labeled column is a binary value column consisting of only two values, like the Precip Type column, and the training data are all other columns
+- Using sklearn's train_test_split, I split the data into training and test sets, then used StandardScaler to perform the data normalization, and then used the logistic regression model to fit the training data to predict the test set and print the R2_score 
+- From the Sklearn metrics I used first the confusion matrix to print  the model's confusion matrix and using the Seaborn heatmap I got this chart and with classification_report i print the report showing the precision, recall, and f1-score
+- <img src = "https://user-images.githubusercontent.com/85246622/209470687-86056203-2d03-4f36-b85a-b63b50cdbe1b.png" width = "400" height = "400" />- <img src = "https://user-images.githubusercontent.com/85246622/209470826-ae823799-f3fc-4a6a-8859-82721501802e.png" width = "400" height = "400" />
+---------------------------------------------
+- When coding the logistic regression, I'm writing a function that computes the sigmoid, the cost function, and a function to predict the test set and puts them all into one function, so after splitting the data and I used the computed sigmoid and the cost function  to calculate the gradient to update thetas to reach the minimum value and then print out the R2_score,  confusion matrix and  classification report
+- <img src = "https://user-images.githubusercontent.com/85246622/209471443-cfabe662-ebdc-443e-8e27-d6a0cb11f7d4.png" width = "400" height = "400" /> <img src = "https://user-images.githubusercontent.com/85246622/209471450-3f539328-dd5f-482b-a792-d34cfa473d9a.png" width = "400" height = "400" />
+<h2>------------------------------------------------------------------------------</h2>
+<h3> SVM Regression implementation : </h3> 
+
+- I split the data into training and test sets and used the StandardScaler to perform data normalization
+- In the LinearSVC function, I made a list of C containing four numbers for C and for each C, fitted the training data to the model with a fixed tolerance number, and predicted the test set to get the score and then print out a classification report for each C and a compilation table containing the four merging matrices for the four C numbers
+- <img src = "https://user-images.githubusercontent.com/85246622/209472440-5413d8d6-fa99-47b8-8d1b-c227931ea74a.png" width = "400" height = "400" /> <img src = "https://user-images.githubusercontent.com/85246622/209472359-e00053b8-b19c-4a61-bcc8-bbea82f092d6.png" width = "400" height = "400" />
+- <img src = "https://user-images.githubusercontent.com/85246622/209472379-2830b914-09b5-4cec-b857-7967ef3e8b76.png" width = "400" height = "400" /> <img src = "https://user-images.githubusercontent.com/85246622/209472385-b759ad20-a8d3-4d86-986d-4488b904ee81.png" width = "400" height = "400" />
+- <img src = "https://user-images.githubusercontent.com/85246622/209472404-dc959f14-77c5-4bb8-b389-797ef48c0965.png" width = "800" height = "800" /> 
+---------------------------------------------
 
 
 
