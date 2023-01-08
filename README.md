@@ -1,4 +1,4 @@
-# Perform-most-used-regression-and-classification-algorithms-on-a-single-data-set
+# Exploring the Power of Regression and Classification on Predicting the Weather
 - <h4>The data set being used contains 12 features and almost hundred thousand records : 
 - <h4>The data set was checked for column types, duplicate rows, and null values. Some duplicate rows and null values were found and removed.
 -	<h4>The data set was explored using visualizations like pie charts and countplots. 
